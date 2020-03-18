@@ -1,3 +1,7 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+
 typedef struct _Aluno_{
     char nome[50];
     int cpf;
@@ -11,7 +15,8 @@ typedef struct _cofo_{
 }Cofo;
 
 Aluno *criarAluno(int n);
+Cofo *criarcofo(int n);
 int inserirAluno(Cofo *gabi,Aluno *luigi);
-int removeAlnuo(Cofo *gabi,int key_cpf);
+Aluno removeAluno(Cofo *gabi,int key_cpf);
 int pesquisarAluno(Cofo *gabi,int key_cpf);
 int destruirCofoAlunos(Cofo *gabi);
